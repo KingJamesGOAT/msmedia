@@ -1,0 +1,293 @@
+/* Import Google Font Montserrat */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+/* General body styling */
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #2e2e2e;
+  color: #f0f0f0;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Container styling */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Headings styling */
+h1,
+h2 {
+  color: #e0e0e0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Authentication form styling */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #3a3a3a;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Input fields styling for auth forms */
+.auth-form input {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid transparent; /* make border transparent */
+  border-radius: 5px;
+  background-color: #2e2e2e;
+  color: #f0f0f0;
+  width: 100%;
+}
+
+/* Buttons styling for auth forms */
+.auth-form button {
+  margin: 10px 0;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4a4a4a;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.auth-form button:hover {
+  background-color: #5a5a5a;
+}
+
+/* Paragraph and span styling for auth forms */
+.auth-form p {
+  color: #f0f0f0;
+  margin: 10px 0;
+}
+
+.auth-form span {
+  color: #a0a0a0;
+  cursor: pointer;
+}
+
+/* Navigation buttons and search container styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.nav-buttons,
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav-buttons {
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.nav-button {
+  background-color: #3a3a3a;
+  color: #ffffff;
+  border: none;
+  padding: 12px 22px;
+  margin: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: #4a4a4a;
+}
+
+.nav-button.active {
+  padding: 14px 24px;
+  background-color: #4a4a4a;
+  border: 2px solid #ffffff;
+}
+
+/* Search container styling */
+.search-container {
+  position: relative;
+}
+
+#search-input {
+  padding: 10px 40px 10px 10px; /* adjust padding to make room for the icon */
+  border-radius: 20px;
+  border: 1px solid transparent; /* make border transparent */
+  background-color: #3a3a3a;
+  color: #f0f0f0;
+}
+
+#search-input::placeholder {
+  color: #f0f0f0;
+}
+
+.search-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Search results styling */
+.search-results {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #3a3a3a;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-height: 150px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.search-result-item {
+  padding: 10px;
+  cursor: pointer;
+  color: #f0f0f0;
+}
+
+.search-result-item:hover {
+  background-color: #4a4a4a;
+}
+
+/* Module styling */
+.module {
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: #3a3a3a;
+  padding: 10px;
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.module[style*="display: block;"] {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+/* Table container styling */
+.table-container {
+  overflow-x: auto;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+th,
+td {
+  padding: 0.75rem;
+  text-align: left;
+  border: 1px solid #4a4a4a;
+}
+
+thead {
+  background-color: #4a4a4a;
+}
+
+tbody tr:hover {
+  background-color: #4a4a4a;
+}
+
+/* Note input styling */
+.note-input {
+  width: 100%;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  background-color: #2e2e2e;
+  color: #f0f0f0;
+  border: 1px solid #4a4a4a;
+  border-radius: 5px;
+}
+
+/* Table footer styling */
+tfoot {
+  font-weight: bold;
+  background-color: #4a4a4a;
+}
+
+/* Save button styling */
+#save-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4a4a4a;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#save-button:hover {
+  background-color: #5a5a5a;
+}
+
+/* User menu styling */
+.user-menu {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.user-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: #3a3a3a;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+.dropdown-menu p {
+  margin: 0 0 10px;
+  color: #f0f0f0;
+}
+
+.dropdown-menu button {
+  display: block;
+  width: 100%;
+  background-color: #4a4a4a;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  margin-top: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.dropdown-menu button:hover {
+  background-color: #5a5a5a;
+}
